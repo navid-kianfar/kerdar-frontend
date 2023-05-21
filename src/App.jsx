@@ -6,6 +6,7 @@ import { socket } from "./services/socket.service";
 import LoadingPage from "./pages/loading/loading.page";
 import NotFoundPage from "./pages/error/not-found/not-found.page";
 import OfflinePage from "./pages/error/offline/offline.page";
+import FlowDesignerPage from "./pages/flow/designer/flow-designer.page";
 
 class App extends Component {
     constructor(props) {
@@ -32,6 +33,7 @@ class App extends Component {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<LoadingPage />} />
+                    <Route path="/flow/designer" element={<FlowDesignerPage />} />
                     <Route path="/offline" element={<OfflinePage />} />
                     <Route path="*" element={<NotFoundPage />} />
                 </Routes>
