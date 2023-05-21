@@ -38,39 +38,6 @@ const Wrapper = styled.div`
       flex-grow: 1;
     }
   }
-  
-  .data-flow {
-    display: flex;
-    flex-direction: column;
-    .items {
-      display: flex;
-      flex-direction: column;
-      .item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px;
-        .input {
-          display: flex;
-          align-items: center;
-          i {
-            font-size: 15px;
-            margin-inline-end: 5px;
-          }
-          span {
-            font-size: 11px;
-          }
-        }
-        .output {
-          display: flex;
-          align-items: center;
-          span {
-            font-size: 11px;
-          }
-        }
-      }
-    }
-  }
 `;
 
 export default Wrapper;

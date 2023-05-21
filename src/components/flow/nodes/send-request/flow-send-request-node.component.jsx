@@ -3,7 +3,7 @@ import Wrapper from "./flow-send-request-node.style";
 import {rightHandleStyles, leftHandleStyles} from "../node.styles";
 const FlowSendRequestNodeComponent = (props) => {
   return (
-    <Wrapper className="flow-send-request-node flow-designer-node active">
+    <Wrapper className="flow-send-request-node flow-designer-node">
       <Handle type="target" position={Position.Left} style={{ ...leftHandleStyles, top: 80 }} />
       <Handle type="source" position={Position.Right} id="success" style={{ ...rightHandleStyles, top: 80 }} />
       <Handle type="source" position={Position.Right} id="failed" style={{ ...rightHandleStyles, top: 105 }} />

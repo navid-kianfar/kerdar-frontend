@@ -3,7 +3,7 @@ import Wrapper from "./flow-start-node.style";
 import {rightHandleStyles} from "../node.styles";
 const FlowStartNodeComponent = () => {
   return (
-    <Wrapper className="flow-start-node flow-designer-node">
+    <Wrapper className="flow-start-node flow-designer-node active">
       <Handle type="source" position={Position.Right}
               style={{...rightHandleStyles, top: 16}} />
       <div className="header">
