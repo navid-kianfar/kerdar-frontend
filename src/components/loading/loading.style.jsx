@@ -11,7 +11,7 @@ const LoadingStyle = styled.div`
     overflow: hidden;
   }
   .loader::after {
-    content: '';
+    content: "";
     width: 192px;
     height: 4.8px;
     background: #232323;
@@ -32,7 +32,6 @@ const LoadingStyle = styled.div`
       transform: translateX(0%);
     }
   }
-
-`
+`;
 
 export default LoadingStyle;

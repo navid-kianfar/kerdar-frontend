@@ -1,3 +1,8 @@
+body {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif
+}
+
 .prevent-select {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -7,4 +12,65 @@
     display: flex;
     width: 100vw;
     height: 100vh;
+}
+
+
+.flow-designer-node {
+    position: relative;
+    cursor: default;
+    color: #212121;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+
+    display: flex;
+    min-height: 0px;
+    min-width: 0px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 8px;
+    padding: 0px;
+}
+
+.flow-designer-node.active {
+    box-shadow: 0px 0px 0px 1px #0265D2,0px 1px 3px 1px rgba(0,0,0,0.12),0px 1px 2px 1px rgba(0,0,0,0.24);
+}
+
+.flow-designer-node .header{
+    border-radius: 8px 0 0 8px;
+
+    min-width: 0;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 4px 0 4px 8px;
+    display: flex;
+    margin-bottom: 0;
+    cursor: grab;
+    flex: 1 1 0;
+    -webkit-box-flex: 1;
+    min-height: 24px;
+
+    background-color: #f2f2f2;
+    color: #303030
+}
+
+.flow-designer-node .header .label {
+    font-weight: 600;
+}
+.flow-designer-node .header .actions {
+    margin-inline-start: 5px;
+
+}
+.flow-designer-node .header button {
+    border: none;
+    background: none;
+    outline: none;
+
+    font-size: 18px;
 }
