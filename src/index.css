@@ -30,8 +30,8 @@ body {
     justify-content: flex-start;
     -webkit-box-align: stretch;
     align-items: stretch;
-    flex-direction: row;
-    gap: 8px;
+    flex-direction: column;
+    /*gap: 8px;*/
     padding: 0px;
 }
 
@@ -41,6 +41,7 @@ body {
 
 .flow-designer-node .header{
     border-radius: 8px 0 0 8px;
+    max-height: 32px;
 
     min-width: 0;
     -webkit-box-pack: start;
