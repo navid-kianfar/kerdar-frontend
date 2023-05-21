@@ -17,6 +17,13 @@ const LoadingWrapper = styled.div`
         max-width: 100px;
         opacity: 0.8;
       }
+      
+      h4 {
+        margin: 5px 0;
+        font-size: 13px;
+        font-weight: 500;
+        font-family: sans-serif;
+      }
     }
 `;
 

@@ -8,6 +8,7 @@ const LoadingPage = () => {
             <div className="loading-inner">
                 <img src={logo} alt="logo" />
                 <LoadingComponent />
+                <h4>Kerdar Workflow Engine</h4>
             </div>
         </LoadingWrapper>
     );
