@@ -5,12 +5,10 @@ const Wrapper = styled.div`
 
   .header {
     padding: 4px 8px;
-    border-radius: 8px 8px 0 0;
   }
   
   .content {
     background: #fff;
-    min-height: 200px;
   }
   
   .destination {
